@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+html { direction: rtl; }
+body {
+  @apply bg-zinc-50 text-zinc-900 antialiased;
+  font-feature-settings: "kern";
+}
+a { @apply text-brand-700 hover:text-brand-800; }
+
+::selection { background: rgba(255, 58, 138, 0.22); }
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: rgba(0,0,0,.15); border-radius: 999px; }
